@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Tab</title>
+	<style type="text/css">
+		#top-row {
+			font-size: 70px;
+			margin: 20px;
+		}
+		#search-field {
+			margin-right: 20px;
+			margin-left: 20px !important;
+			width: 5px;
+		}
+		:root,
+		body {
+			--primary:#006e17;--on-primary:#ffffff;--primary-container:#93f990;--on-primary-container:#002203;--secondary:#52634f;--on-secondary:#ffffff;--secondary-container:#d5e8ce;--on-secondary-container:#101f0f;--tertiary:#38656a;--on-tertiary:#ffffff;--tertiary-container:#bcebf0;--on-tertiary-container:#001f23;--error:#ba1b1b;--error-container:#ffdad4;--on-error:#ffffff;--on-error-container:#410001;--background:#fcfdf6;--on-background:#1a1c19;--surface:#fcfdf6;--on-surface:#1a1c19;--surface-variant:#dee5d8;--on-surface-variant:#424840;--outline:#73796f;--inverse-on-surface:#f0f1eb;--inverse-surface:#2f312d;--inverse-primary:#78dc77;
+		}
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/beercss@3.0.8/dist/cdn/beer.min.css" rel="stylesheet">
+
+	<script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.0.8/dist/cdn/beer.min.js"></script>
+
+	<script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.1.5/dist/cdn/material-dynamic-colors.min.js"></script>
+
+	<script type="text/javascript">
+		function searchIt() {
+			var search = "https://google.com/search?q=" + encodeURIComponent(document.getElementById('searchtext').value)
+			window.location.href = search
+
+		}
+
+
+	</script>
+</head>
+<body style="background-image: url(https://www.pcclean.io/wp-content/uploads/2020/4/mYv2Ir.jpg);">
+	<main class="responsive"> 
+		<div class="row" id="top-row">
+			<div id="time" style="color: white;">17:33</div>
+			<button class="border round large-elevate" style="color: #ffbfbf; float: right;" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfb4F0ZWpUi0wO2CmWOTND_9tQkMtXmjI1KwlmRDFJIq5dGeg/viewform?usp=sf_link'">Delete my account</button>
+		</div>
+		<nav class="no-space">
+			<div class="max field border fill left-round large-elevate">
+				<input id="searchtext">
+			</div>
+			<button class="large right-round medium-elevate" id="search" onclick="searchIt()">Search</button>
+		</nav>
+		
+	</main>
+</body>
+</html>
